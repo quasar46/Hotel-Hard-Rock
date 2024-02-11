@@ -1,0 +1,83 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  //   желтый фон, черный текст
+  &--first {
+    height: 57px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 16px;
+    &--l {
+      height: 63px;
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+      height: 44px;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  //   серый фон черный текст
+  &--second {
+    height: 60px;
+    font-size: 20px;
+    color: var(--color-black);
+    padding: 0 16px;
+    background-color: var(--color-grey);
+    @media (max-width: 767px) {
+      height: 36px;
+      font-size: 14px;
+      padding: 0 12px;
+    }
+  }
+  //   черный фон белый текст
+  &--black {
+    height: 57px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 33px;
+    color: #fff;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+      height: 36px;
+      font-size: 14px;
+      padding: 0 20px;
+    }
+  }
+  &--contrast {
+    height: 63px;
+    padding: 0 16px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-black);
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+      height: 52px;
+      font-size: 14px;
+    }
+  }
+}
+
+.showText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5158ed;
+  white-space: nowrap;
+  &--w {
+    color: #fff;
+  }
+  @media(max-width: 767px) {
+    font-size: 14px;
+  }
+}

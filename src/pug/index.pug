@@ -1,0 +1,281 @@
+extends layout
+block main 
+	main
+		section.main-block
+			video#video.main-block__video(muted loop)
+				source(src=require("../images/video.mp4") type="video/mp4")
+			button#playVideo
+				span Video about <br> apartments
+			.container
+				.main-block__wrap
+					.main-block__slider
+						.swiper 
+							.swiper-wrapper 
+								.swiper-slide 
+									h3.main-block__slider-title Holiday Home 
+									p.main-block__slider-text The Residences at the Hard Rock Hotel Davos is a complex of fully furnished apartments with access to bespoke Hard Rock Hotel services. The Residences at the Hard Rock Hotel Davos are a unique property investment in health and wealth, to be enjoyed by you and yours.
+									button.btn.main-block__slider-btn Send a request
+								.swiper-slide 
+									h3.main-block__slider-title Holiday Home 2
+									p.main-block__slider-text The Residences at the Hard Rock Hotel Davos is a complex of fully furnished apartments with access to bespoke Hard Rock Hotel services. The Residences at the Hard Rock Hotel Davos are a unique property investment in health and wealth, to be enjoyed by you and yours.
+									button.btn.main-block__slider-btn Send a request
+								.swiper-slide 
+									h3.main-block__slider-title Holiday Home 2
+									p.main-block__slider-text The Residences at the Hard Rock Hotel Davos is a complex of fully furnished apartments with access to bespoke Hard Rock Hotel services. The Residences at the Hard Rock Hotel Davos are a unique property investment in health and wealth, to be enjoyed by you and yours.
+									button.btn.main-block__slider-btn Send a request
+								.swiper-slide 
+									h3.main-block__slider-title Holiday Home 2
+									p.main-block__slider-text The Residences at the Hard Rock Hotel Davos is a complex of fully furnished apartments with access to bespoke Hard Rock Hotel services. The Residences at the Hard Rock Hotel Davos are a unique property investment in health and wealth, to be enjoyed by you and yours.
+									button.btn.main-block__slider-btn Send a request
+
+								.swiper-slide 
+									h3.main-block__slider-title Holiday Home 3
+									p.main-block__slider-text The Residences at the Hard Rock Hotel Davos is a complex of fully furnished apartments with access to bespoke Hard Rock Hotel services. The Residences at the Hard Rock Hotel Davos are a unique property investment in health and wealth, to be enjoyed by you and yours.
+									button.btn.main-block__slider-btn Send a request
+							.swiper-pagination
+
+		section.main-slider.after-main 
+			.container 	
+				.tab-container
+					.main-slider__head 
+						h2.section-title Our residences
+						.main-slider__sort.tabs
+							a.btn.btn--second.tab.active Ready to live in
+							a.btn.btn--second.tab Under construction
+						a.btn.btn--black.main-slider__btn More
+					.tab-panes
+						.main-slider__wrap.main-slider__wrap--ready.tab-pane.active
+							.swiper 
+								.swiper-wrapper 
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+							.swiper-pagination
+							.swiper-navigation
+								.swiper-button-prev
+								.swiper-button-next
+						.main-slider__wrap.main-slider__wrap--dev.tab-pane
+							.swiper 
+								.swiper-wrapper 
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+									.swiper-slide
+										picture.main-sider__pic
+											source(srcset=require("../images/slide1.png") media="(min-width: 768px)") 
+											source(srcset=require("../images/slide1-mobile.png") media="(min-width: 0px)")
+											img(src=require("../images/slide1.png"), alt="")
+										.main-slider__footer 
+											.main-slider__char 
+												span.main-slider__char-place Residence №212
+												ul.main-slider__char-size 
+													li 1-Bedroom
+													li 76,09 М²
+											button.btn.btn--first Send a request
+							.swiper-pagination
+							.swiper-navigation
+								.swiper-button-prev
+								.swiper-button-next
+
+		include modules/reviews
+		+reviews
+
+
+		section.offer 
+			.container 
+				.offer__wrap 
+					.offer__head
+						h2.offer__title Ownership
+						span.offer__subtitle Buyers at the Residences participate in the unique rental program offered by the Hard Rock Hotel Davos with an attractive return on investment
+
+					.offer__items
+						.offer__item
+							img.offer__item-pic(src=require("../images/pic1.svg"), alt="")
+							.offer__content
+								span.offer__item-title Stay up to 8 weeks
+								p.offer__item-text You can enjoy your apartment with all hotel benefits for up to 8 weeks per year including 3 weeks during the high season in Davos.
+						.offer__item
+							img.offer__item-pic(src=require("../images/pic2.svg"), alt="")
+							.offer__content
+								span.offer__item-title Earn up to CHF 50 000
+								p.offer__item-text The revenue can vary depending on average room occupation. Thus, the return on equity can reach 6% bringing up to CHF 50 000.
+						.offer__item
+							img.offer__item-pic(src=require("../images/pic3.svg"), alt="")
+							.offer__content
+								span.offer__item-title Get 60% of revenue
+								p.offer__item-text Our Rental Program is managed by the hotel's management team and implies 60/40 room revenue split between you and the hotel.
+					.offer__btns 
+						a(href="calc.html").btn.btn--first.btn--first--l.offer__btn Mortgage calculator
+						button.btn.btn--contrast.offer__btn More invest information
+
+		section.benefits
+			.container
+				.benefits__wrap
+					.benefits__head
+						h2.section-title.benefits__title With the benefits of hotel living
+						span.benefits__subtitle Owners have complimentary access to the wellness facilities within the Hard Rock Hotel Davos and its state-of-the-art Rock Spa®, Body Rock® gym and Rock Om® yoga and a lot more.
+					.benefits__items
+						a(href="").benefits__item
+							.benefits__pic
+								img(src=require("../images/pic4.png"), alt="")
+								.benefits__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							.benefits__name 10% off in our restaurants & bars 
+							.benefits__text.benefits__text--mobile Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							button.benefits__item-btn Show all
+						a(href="").benefits__item
+							.benefits__pic
+								img(src=require("../images/pic4.png"), alt="")
+								.benefits__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							.benefits__name Free gym & spa access
+							.benefits__text.benefits__text--mobile Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							button.benefits__item-btn Show all
+						a(href="").benefits__item
+							.benefits__pic
+								img.benefits__pic(src=require("../images/pic6.png"), alt="")
+								.benefits__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							.benefits__name Free garage parking spacing
+							.benefits__text.benefits__text--mobile Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+							button.benefits__item-btn Show all
+					button.btn.btn--first.benefits__items-btn More benefits 
+
+		include modules/map
+
+		section.news 
+			.container 
+				.news__wrap 
+					.news__head
+						h2.section-title News & Events
+						a.btn.btn--black(href="") More 
+					.swiper.news__slider 
+						.swiper-wrapper 
+							.swiper-slide 
+								img.news__slider-pic(src=require("../images/pic7.png") alt="")
+								.news__slider-name Top 3 best snowboarding slopes at your nearest resort
+								p.news__slider-text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+							.swiper-slide 
+								img.news__slider-pic(src=require("../images/pic7.png") alt="")
+								.news__slider-name Top 3 best snowboarding slopes at your nearest resort
+								p.news__slider-text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+							.swiper-slide 
+								img.news__slider-pic(src=require("../images/pic7.png") alt="")
+								.news__slider-name Top 3 best snowboarding slopes at your nearest resort
+								p.news__slider-text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+							.swiper-slide 
+								img.news__slider-pic(src=require("../images/pic7.png") alt="")
+								.news__slider-name Top 3 best snowboarding slopes at your nearest resort
+								p.news__slider-text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+						.swiper-button-prev 
+						.swiper-button-next
+
+		include modules/feedback
+
+
+		section.faq 
+			.container
+				h2.section-title.faq__title FAQ
+				.faq__wrap.accordion-container 
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+					.ac 
+						.ac-header 
+							button.ac-trigger What is real estate investing?
+						.ac-panel
+							p.ac-text Real estate under investment is a form of investing funds in real estate for profit. This may involve buying, managing, developing and/or selling real estate in order to achieve financial growth and maximize return on investment.
+
+				.faq__footer 
+					span.faq__footer-title Headline for seo-text
+					.faq__footer-text
+						p Real estate is not just houses, apartments or commercial properties. It is the place where we live, work and develop. It is a space that provides comfort, security and coziness for each of us. In this section you will find everything related to real estate - from renting apartments to buying mansions, from investing in real estate to getting a mortgage loan. We offer you only proven and reliable options so that you can choose exactly what is right for you and your family. With us your real estate will become a reality!
+						button.showText Show all

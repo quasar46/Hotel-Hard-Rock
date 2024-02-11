@@ -1,0 +1,13 @@
+.main-menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-menu__footer {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}

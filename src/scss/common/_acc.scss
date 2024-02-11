@@ -1,0 +1,63 @@
+.ac {
+  background-color: #f9f9f9;
+  border: none;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:not(:first-child) {
+    margin-top: 20px;
+    @media (max-width: 767px) {
+      margin-top: 12px;
+    }
+  }
+}
+
+.ac .ac-trigger {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  font-family: $fontBase;
+  color: var(--color-black);
+  padding: 32px 40px;
+  @media (max-width: 767px) {
+    padding: 24px;
+    font-size: 16px;
+  }
+}
+
+.ac .ac-trigger:focus {
+  color: var(--color-black);
+}
+
+.ac .ac-panel .ac-text {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Inter;
+  padding: 0 40px 32px 40px;
+  line-height: 28px;
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.ac .ac-trigger::after {
+  width: 32px;
+  font-size: 0;
+  background-image: url("../images/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 767px) {
+    width: 24px;
+  }
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  background-image: url("../images/minus.svg");
+}
+
+.ac .ac-trigger[aria-expanded="true"] {
+  // padding-bottom: 16px;
+}

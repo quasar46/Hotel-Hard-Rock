@@ -1,0 +1,336 @@
+extends layout
+block main 
+	main
+		section.main-block
+			video#video.main-block__video(muted loop)
+				source(src=require("../images/video.mp4") type="video/mp4")
+			button#playVideo
+				span Video about <br> apartments
+			.container
+				.main-block__wrap
+					include modules/reviews
+					+reviews(class="reviews--about")
+
+		section.places.after-main 
+			.container 
+				.places__head
+					h2.section-title.places__title With the benefits of hotel living
+					span.places__subtitle Owners have complimentary access to the wellness facilities within the Hard Rock Hotel Davos and its state-of-the-art Rock Spa®, Body Rock® gym and Rock Om® yoga and a lot more.
+			.places__wrap.container 
+				.places__slider 
+					.swiper 
+						.swiper-wrapper.places__items 
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile 10% off in our restaurants & bars
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name 10% off in our restaurants & bars
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile 5% off at the rock shop
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name 5% off at the rock shop
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile Free buffet breakfast
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name Free buffet breakfast
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile Free gym  & spa access
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name Free gym  & spa access
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile 10% off for spa treatments
+									span.places__text  
+								span.places__name 10% off for spa treatments
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile 10% off for hotel booking
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name 10% off for hotel booking
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile Free 24/7 concierge services
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name Free 24/7 concierge services
+							.swiper-slide.places__slide 
+								.places__pic 
+									img(src=require("../images/pic9.png"), alt="")
+									span.places__name.places__name--mobile Free garage parking spacing
+									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
+								span.places__name Free garage parking spacing
+					.swiper-pagination
+		section.advantages 
+			.container 
+				.advantages__wrap 
+					.advantages__item.advantages__large
+						span.advantages__large-title Why choose davos
+						span.advantages__large-text Located in the breathtaking Swiss Alps with amazing views and a range of activities available throughout the year, buyers can enjoy the Alpine lifestyle for 8 weeks per year, including 3 weeks during high season.
+					.advantages__item 
+						img.advantages__item-pic(src=require("../images/a1.svg") alt="")
+						.advantages__item__box
+							span.advantages__item-title Impressive ROI
+							span.advantages__item-text The Residences provide an impressive annual return on investment, ensuring your chosen investment continues to earn a profit.
+					.advantages__item 
+						img.advantages__item-pic(src=require("../images/a2.svg") alt="")
+						.advantages__item__box
+							span.advantages__item-title  Negotiation support
+							span.advantages__item-text The Residences provide an impressive annual return on investment, ensuring your chosen investment continues to earn a profit.
+					.advantages__item 
+						img.advantages__item-pic(src=require("../images/a3.svg") alt="")
+						.advantages__item__box
+							span.advantages__item-title  Stay for full holidays or just for a weekend
+							span.advantages__item-text The Residences at the Hard Rock Hotel Davos is a perfect holiday home, you can live there for up to 8 weeks per year, including 3 weeks in a high season.
+					.advantages__item 
+						img.advantages__item-pic(src=require("../images/a4.svg") alt="")
+						.advantages__item__box
+							span.advantages__item-title  Property management service
+							span.advantages__item-text The Residences at the Hard Rock Hotel Davos is a perfect holiday home, you can live there for up to 8 weeks per year, including 3 weeks in a high season.
+
+		section.about
+			.container 
+				.about__head
+					h2.section-title.about__title About apartmens
+					span.about__subtitle These exclusive apartments represent a fantastic investment and lifestyle purchase, surrounded by a charming and dramatic Alpine backdrop.
+				.about__wrap 
+					.about__slider
+						.swiper 
+							.swiper-wrapper
+								.swiper-slide.about__slide 
+									img(src=require("../images/pic11.png"), alt="")
+									.about__slide-footer
+										span.about__slide-title Design
+										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
+								.swiper-slide.about__slide 
+									img(src=require("../images/pic12.png"), alt="")
+									.about__slide-footer
+										span.about__slide-title Views
+										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
+								.swiper-slide.about__slide 
+									img(src=require("../images/pic13.png"), alt="")
+									.about__slide-footer
+										span.about__slide-title Relax
+										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
+								.swiper-slide.about__slide 
+									img(src=require("../images/pic11.png"), alt="")
+									.about__slide-footer
+										span.about__slide-title Relax
+										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
+								.swiper-slide.about__slide 
+									img(src=require("../images/pic11.png"), alt="")
+									.about__slide-footer
+										span.about__slide-title Furniture and facilities
+										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
+						.swiper-button-prev 
+						.swiper-button-next
+		include modules/map
+
+		section.residence
+			.container 
+				.residence__head 
+					h2.section-title.residence__title Residence
+					a.btn.btn--black More
+				.residence__wrap
+					.residence__slider 
+						.swiper 
+							.swiper-wrapper 
+								.swiper-slide.residence__slide 
+									.residence__pic 
+										img(src=require("../images/r1.png"), alt="")
+									.residence__body 
+										span.residence__name Residence №105
+										ul.residence__char 
+											li
+												span Bedrooms
+												span 2 ½
+											li
+												span room
+												span х1
+											li
+												span Floor
+												span ground floor
+											li
+												span Balcony
+												span 12.27
+											li
+												span Net area, m2
+												span 64.82
+											li
+												span Gross area, m2
+												span 77.09
+									.residence__footer 
+										.residence__price 
+											span 1 965 000 
+											| &nbsp;CHF
+										a.btn.btn--second.residence__btn More
+								.swiper-slide.residence__slide 
+									.residence__pic 
+										img(src=require("../images/r1.png"), alt="")
+									.residence__body 
+										span.residence__name Residence №105
+										ul.residence__char 
+											li
+												span Bedrooms
+												span 2 ½
+											li
+												span room
+												span х1
+											li
+												span Floor
+												span ground floor
+											li
+												span Balcony
+												span 12.27
+											li
+												span Net area, m2
+												span 64.82
+											li
+												span Gross area, m2
+												span 77.09
+									.residence__footer 
+										.residence__price 
+											span 1 965 000 
+											| &nbsp;CHF
+										a.btn.btn--second.residence__btn More
+
+								.swiper-slide.residence__slide 
+									.residence__pic 
+										img(src=require("../images/r1.png"), alt="")
+									.residence__body 
+										span.residence__name Residence №105
+										ul.residence__char 
+											li
+												span Bedrooms
+												span 2 ½
+											li
+												span room
+												span х1
+											li
+												span Floor
+												span ground floor
+											li
+												span Balcony
+												span 12.27
+											li
+												span Net area, m2
+												span 64.82
+											li
+												span Gross area, m2
+												span 77.09
+									.residence__footer 
+										.residence__price 
+											span 1 965 000 
+											| &nbsp;CHF
+										a.btn.btn--second.residence__btn More
+
+								.swiper-slide.residence__slide 
+									.residence__pic 
+										img(src=require("../images/r1.png"), alt="")
+									.residence__body 
+										span.residence__name Residence №105
+										ul.residence__char 
+											li
+												span Bedrooms
+												span 2 ½
+											li
+												span room
+												span х1
+											li
+												span Floor
+												span ground floor
+											li
+												span Balcony
+												span 12.27
+											li
+												span Net area, m2
+												span 64.82
+											li
+												span Gross area, m2
+												span 77.09
+									.residence__footer 
+										.residence__price 
+											span 1 965 000 
+											| &nbsp;CHF
+										a.btn.btn--second.residence__btn More
+
+								.swiper-slide.residence__slide 
+									.residence__pic 
+										img(src=require("../images/r1.png"), alt="")
+									.residence__body 
+										span.residence__name Residence №105
+										ul.residence__char 
+											li
+												span Bedrooms
+												span 2 ½
+											li
+												span room
+												span х1
+											li
+												span Floor
+												span ground floor
+											li
+												span Balcony
+												span 12.27
+											li
+												span Net area, m2
+												span 64.82
+											li
+												span Gross area, m2
+												span 77.09
+									.residence__footer 
+										.residence__price 
+											span 1 965 000
+											| &nbsp;CHF
+										a.btn.btn--second.residence__btn More
+						.swiper-button-prev 
+						.swiper-button-next
+		section.team 
+			.container 
+				h2.section-title.team__title Team
+				.team__wrap
+					.team__slider 
+						.swiper 
+							.swiper-wrapper 
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+								.swiper-slide.team__slide
+									img.team__pic(src=require("../images/pic15.png"), alt="")
+									.team__body 
+										span.team__name Sales Director
+										span.team__text Marika Zanoletti
+						.swiper-button-prev 
+						.swiper-button-next
+
+		include modules/feedback
