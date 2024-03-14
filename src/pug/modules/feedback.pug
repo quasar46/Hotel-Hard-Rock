@@ -3,7 +3,32 @@ section.feedback
 		.feedback__wrap 
 			.feedback__block 
 				h2.title-section.feedback__title Please, fill in the form below. This will help us to select for you the best matching offer.
-				form.feedback__form(action="") 
+				form.form(action="") 
+					.form__item 
+						select.mySelect
+							option Type of finance
+							option(value="") Mortgage
+							option(value="") Cash  
+					.form__item 
+						select.mySelect
+							option Type of usage
+							option(value="") Investment only 
+							option(value="") Investment + second home 
+					.form__item 
+						select.mySelect
+							option Availability status
+							option Ready to live now (from 1 200 000 CHF)
+							option(value="") Off plan sale (from 700 000 CHF) 
+					.form__item 
+						input(type="text" required)
+						label(for="") Your name
+					.form__item
+						input(type="email" required)
+						label(for="") Your email
+					.form__item.form__item-lang 
+						input.phone(type="tel")
+					input(type="submit" value="Send").form__submit
+
 			.feedback__author
 				.feedback__author-pic
 					img(src=require("../../images/pic8.png"), alt="")

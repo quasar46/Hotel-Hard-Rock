@@ -2,10 +2,22 @@ extends layout
 block main 
 	main
 		section.main-block
-			video#video.main-block__video(muted loop)
-				source(src=require("../images/video.mp4") type="video/mp4")
-			button#playVideo
-				span Video about <br> apartments
+			//- video#video.main-block__video(muted loop)
+			//- 	source(src=require("../images/video.mp4") type="video/mp4")
+			//- button#playVideo
+			//- 	span Video about <br> apartments
+			.swiper.banner-slider
+				.swiper-wrapper
+					.swiper-slide 
+						img(src=require("../images/back1.png"), alt="")
+					.swiper-slide 
+						img(src=require("../images/back2.png"), alt="")
+					.swiper-slide 
+						img(src=require("../images/back1.png"), alt="")
+					.swiper-slide 
+						img(src=require("../images/back2.png"), alt="")
+					.swiper-slide 
+						img(src=require("../images/back1.png"), alt="")
 			.container
 				.main-block__wrap
 					include modules/reviews
@@ -69,6 +81,8 @@ block main
 									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
 								span.places__name Free garage parking spacing
 					.swiper-pagination
+					.swiper-button-prev
+					.swiper-button-next
 		section.advantages 
 			.container 
 				.advantages__wrap 
@@ -132,205 +146,9 @@ block main
 										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
 						.swiper-button-prev 
 						.swiper-button-next
-		include modules/map
+		include modules/map-second
 
-		section.residence
-			.container 
-				.residence__head 
-					h2.section-title.residence__title Residence
-					a.btn.btn--black More
-				.residence__wrap
-					.residence__slider 
-						.swiper 
-							.swiper-wrapper 
-								.swiper-slide.residence__slide 
-									.residence__pic 
-										img(src=require("../images/r1.png"), alt="")
-									.residence__body 
-										span.residence__name Residence №105
-										ul.residence__char 
-											li
-												span Bedrooms
-												span 2 ½
-											li
-												span room
-												span х1
-											li
-												span Floor
-												span ground floor
-											li
-												span Balcony
-												span 12.27
-											li
-												span Net area, m2
-												span 64.82
-											li
-												span Gross area, m2
-												span 77.09
-									.residence__footer 
-										.residence__price 
-											span 1 965 000 
-											| &nbsp;CHF
-										a.btn.btn--second.residence__btn More
-								.swiper-slide.residence__slide 
-									.residence__pic 
-										img(src=require("../images/r1.png"), alt="")
-									.residence__body 
-										span.residence__name Residence №105
-										ul.residence__char 
-											li
-												span Bedrooms
-												span 2 ½
-											li
-												span room
-												span х1
-											li
-												span Floor
-												span ground floor
-											li
-												span Balcony
-												span 12.27
-											li
-												span Net area, m2
-												span 64.82
-											li
-												span Gross area, m2
-												span 77.09
-									.residence__footer 
-										.residence__price 
-											span 1 965 000 
-											| &nbsp;CHF
-										a.btn.btn--second.residence__btn More
-
-								.swiper-slide.residence__slide 
-									.residence__pic 
-										img(src=require("../images/r1.png"), alt="")
-									.residence__body 
-										span.residence__name Residence №105
-										ul.residence__char 
-											li
-												span Bedrooms
-												span 2 ½
-											li
-												span room
-												span х1
-											li
-												span Floor
-												span ground floor
-											li
-												span Balcony
-												span 12.27
-											li
-												span Net area, m2
-												span 64.82
-											li
-												span Gross area, m2
-												span 77.09
-									.residence__footer 
-										.residence__price 
-											span 1 965 000 
-											| &nbsp;CHF
-										a.btn.btn--second.residence__btn More
-
-								.swiper-slide.residence__slide 
-									.residence__pic 
-										img(src=require("../images/r1.png"), alt="")
-									.residence__body 
-										span.residence__name Residence №105
-										ul.residence__char 
-											li
-												span Bedrooms
-												span 2 ½
-											li
-												span room
-												span х1
-											li
-												span Floor
-												span ground floor
-											li
-												span Balcony
-												span 12.27
-											li
-												span Net area, m2
-												span 64.82
-											li
-												span Gross area, m2
-												span 77.09
-									.residence__footer 
-										.residence__price 
-											span 1 965 000 
-											| &nbsp;CHF
-										a.btn.btn--second.residence__btn More
-
-								.swiper-slide.residence__slide 
-									.residence__pic 
-										img(src=require("../images/r1.png"), alt="")
-									.residence__body 
-										span.residence__name Residence №105
-										ul.residence__char 
-											li
-												span Bedrooms
-												span 2 ½
-											li
-												span room
-												span х1
-											li
-												span Floor
-												span ground floor
-											li
-												span Balcony
-												span 12.27
-											li
-												span Net area, m2
-												span 64.82
-											li
-												span Gross area, m2
-												span 77.09
-									.residence__footer 
-										.residence__price 
-											span 1 965 000
-											| &nbsp;CHF
-										a.btn.btn--second.residence__btn More
-						.swiper-button-prev 
-						.swiper-button-next
-		section.team 
-			.container 
-				h2.section-title.team__title Team
-				.team__wrap
-					.team__slider 
-						.swiper 
-							.swiper-wrapper 
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-								.swiper-slide.team__slide
-									img.team__pic(src=require("../images/pic15.png"), alt="")
-									.team__body 
-										span.team__name Sales Director
-										span.team__text Marika Zanoletti
-						.swiper-button-prev 
-						.swiper-button-next
-
+		include modules/residence
+		
+		include modules/team
 		include modules/feedback

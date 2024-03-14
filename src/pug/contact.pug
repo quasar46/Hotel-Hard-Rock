@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+	include /modules/head
+	body
+
+		.wrapper
+			include /modules/header-light
+			main
+				section 
+					.container 
+						.breadcrumbs 
+							a(href="index.html")
+								img(src=require("../images/icn-home.svg"), alt="") 
+							a Contact 
+						h1.section-title.contact__title Contact
+				include modules/map-first
+				include modules/team-contact
+				section.requisites 
+					.container 
+						.requisites__wrap 
+							.requisites__head 
+								h2.requisites__title Company requisites
+								a.requisites__download(href="" download) Download requisites
+							.requisites__content 
+								.requisites__block
+									span The full name of the business is:
+									span text field
+								.requisites__block
+									span Abbreviated name of the company:
+									span text field
+								.requisites__block
+									span Registered address:
+									span text field
+								.requisites__block
+									span Actual address:
+									span text field
+								.requisites__block
+									span Registered address:
+									span text field
+								.requisites__block
+									span Actual address:
+									span text field
+								.requisites__block
+									span The full name of the business is:
+									span text field
+								.requisites__block
+									span Abbreviated name of the company:
+									span text field
+								.requisites__block
+									span Registered address:
+									span text field
+								.requisites__block
+									span Actual address:
+									span text field
+								.requisites__block
+									span Registered address:
+									span text field
+								.requisites__block
+									span Actual address:
+									span text field									
+							button.requisites__more More
+								img(src=require("../images/icn-arrow-down.svg"), alt="")
+				include modules/feedback
+			include modules/footer

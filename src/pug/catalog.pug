@@ -1,0 +1,263 @@
+doctype html
+html(lang="en")
+	include /modules/head
+	body
+
+		.wrapper
+			include /modules/header-light-2
+			main
+				section.catalog
+					.catalog__head 
+						.container
+							.catalog__head-block 
+								.breadcrumbs 
+									a(href="index.html")
+										img(src=require("../images/icn-home.svg"), alt="") 
+									a Residences
+								h1.section-title.catalog__title Residences
+							.catalog__head-block 
+								span.catalog__head-block-title Price CHF
+								.filter-price 
+									.filter-price__item 
+										span Min 
+										input(type="number" min="0" max="1965000" placeholder="1 965 000")
+									.filter-price__item 
+										span Max 
+										input(type="number" min="0" max="1965000" placeholder="1 965 000")
+									button.filter-price__reset Reset
+							.catalog__head-block 
+								span.catalog__head-block-title Floor
+								.filter-floor 
+									.filter-floor__item 
+										input(type="checkbox" id="f1" checked)
+										label(for="f1") 1
+									.filter-floor__item 
+										input(type="checkbox" id="f2")
+										label(for="f2") 2
+									.filter-floor__item 
+										input(type="checkbox" id="f3")
+										label(for="f3") 3
+							.catalog__head-block 
+								span.catalog__head-block-title Stage
+								.filter-stage 
+									.filter-stage__item 
+										input(type="checkbox" id="s1")
+										label(for="s1") Ready to live in
+									.filter-stage__item 
+										input(type="checkbox" id="s2")
+										label(for="s2") Under construction
+							.catalog__head-block.catalog__head-block--d
+								button.btn.btn--first Done
+							.catalog__head-btns 
+								button.btn.btn--second Reset
+								button.btn.btn--first Done
+					.catalof__wrap 
+						.container 
+							.catalog__body 
+								.catalog__row 
+									.catalog__char 
+										a(href="residence.html").catalog__char-title RESIDENCE #902
+										ul.catalog__char-list 
+											li
+												span room
+												span х1
+											li
+												span Bedrooms
+												span 2½
+											li
+												span Floor
+												span Ground floor
+											li
+												span Gross area, m2
+												span 77.09
+										ul.catalog__char-list-min 
+											.catalog__char-list-min-items
+												span 76,09 М²
+												span 1-Bedroom
+												span 1 Floor
+											a(href=require("../images/r1.png") , data-fslightbox="1b-lightbox"  )
+												button.btn.btn--first Floor plan
+										a(href=require("../images/r1.png") , data-fslightbox="1-lightbox"  )
+											img.catalog__char-pic(src=require("../images/r1.png"), alt="")
+									.catalog__slider.catalog__slider-1 
+										.swiper 
+											a(href="residence.html").swiper-wrapper
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+										.swiper-pagination 
+										.swiper-button-prev 
+										.swiper-button-next
+								.catalog__row 
+									.catalog__char 
+										a(href="residence.html").catalog__char-title RESIDENCE #902
+										ul.catalog__char-list 
+											li
+												span room
+												span х1
+											li
+												span Bedrooms
+												span 2½
+											li
+												span Floor
+												span Ground floor
+											li
+												span Gross area, m2
+												span 77.09
+										ul.catalog__char-list-min 
+											.catalog__char-list-min-items
+												span 76,09 М²
+												span 1-Bedroom
+												span 1 Floor
+											a(href=require("../images/r1.png") , data-fslightbox="2b-lightbox"  )
+												button.btn.btn--first Floor plan
+										a(href=require("../images/r1.png") , data-fslightbox="2-lightbox"  )
+											img.catalog__char-pic(src=require("../images/r1.png"), alt="")
+									.catalog__slider.catalog__slider-2 
+										.swiper 
+											a(href="residence.html").swiper-wrapper
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+										.swiper-pagination 
+										.swiper-button-prev 
+										.swiper-button-next
+								.catalog__row 
+									.catalog__char 
+										a(href="residence.html").catalog__char-title RESIDENCE #902
+										ul.catalog__char-list 
+											li
+												span room
+												span х1
+											li
+												span Bedrooms
+												span 2½
+											li
+												span Floor
+												span Ground floor
+											li
+												span Gross area, m2
+												span 77.09
+										ul.catalog__char-list-min 
+											.catalog__char-list-min-items
+												span 76,09 М²
+												span 1-Bedroom
+												span 1 Floor
+											a(href=require("../images/r1.png") , data-fslightbox="3b-lightbox"  )
+												button.btn.btn--first Floor plan
+										a(href=require("../images/r1.png") , data-fslightbox="3-lightbox"  )
+											img.catalog__char-pic(src=require("../images/r1.png"), alt="")
+									.catalog__slider.catalog__slider-3
+										.swiper 
+											a(href="residence.html").swiper-wrapper
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+										.swiper-pagination 
+										.swiper-button-prev 
+										.swiper-button-next
+								.catalog__row 
+									.catalog__char 
+										a(href="residence.html").catalog__char-title RESIDENCE #902
+										ul.catalog__char-list 
+											li
+												span room
+												span х1
+											li
+												span Bedrooms
+												span 2½
+											li
+												span Floor
+												span Ground floor
+											li
+												span Gross area, m2
+												span 77.09
+										ul.catalog__char-list-min 
+											.catalog__char-list-min-items
+												span 76,09 М²
+												span 1-Bedroom
+												span 1 Floor
+											a(href=require("../images/r1.png") , data-fslightbox="4b-lightbox"  )
+												button.btn.btn--first Floor plan
+										a(href=require("../images/r1.png") , data-fslightbox="4-lightbox"  )
+											img.catalog__char-pic(src=require("../images/r1.png"), alt="")
+									.catalog__slider.catalog__slider-4 
+										.swiper 
+											a(href="residence.html").swiper-wrapper
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+										.swiper-pagination 
+										.swiper-button-prev 
+										.swiper-button-next
+								.catalog__row 
+									.catalog__char 
+										a(href="residence.html").catalog__char-title RESIDENCE #902
+										ul.catalog__char-list 
+											li
+												span room
+												span х1
+											li
+												span Bedrooms
+												span 2½
+											li
+												span Floor
+												span Ground floor
+											li
+												span Gross area, m2
+												span 77.09
+										ul.catalog__char-list-min 
+											.catalog__char-list-min-items
+												span 76,09 М²
+												span 1-Bedroom
+												span 1 Floor
+											a(href=require("../images/r1.png") , data-fslightbox="5b-lightbox"  )
+												button.btn.btn--first Floor plan
+										a(href=require("../images/r1.png") , data-fslightbox="5-lightbox"  )
+											img.catalog__char-pic(src=require("../images/r1.png"), alt="")
+									.catalog__slider.catalog__slider-5 
+										.swiper 
+											a(href="residence.html").swiper-wrapper
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+												.swiper-slide 
+													.catalog__pic 
+														span.catalog__pic-label Under construction
+														img(src=require("../images/back5.png"), alt="")
+										.swiper-pagination 
+										.swiper-button-prev 
+										.swiper-button-next
+
+							.pagination
+								a(href="") 
+									img(src=require("../images/prev.svg"), alt="") 
+								a.active(href="") 1
+								a(href="") 2
+								a(href="")
+									img(src=require("../images/next.svg"), alt="") 
+				include modules/faq
+
+
+			include /modules/footer

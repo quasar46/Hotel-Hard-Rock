@@ -1,0 +1,27 @@
+.language {
+    color: inherit;
+    @media (max-width: 1440px) {
+        display: none;
+    }
+}
+
+.language-mobile {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    @media (min-width: 1439px) {
+        display: none;
+    }
+
+    li.active {
+        color: var(--color-yellow);
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        &:active {
+            color: var(--color-yellow);
+        }
+    }
+}

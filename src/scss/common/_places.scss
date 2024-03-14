@@ -12,6 +12,9 @@
     max-width: 100%;
     padding: 0;
     margin: 0;
+    @media(max-width: 1440px) {
+      padding-bottom: 50px;
+    }
     @media (max-width: 767px) {
       padding: 24px;
       padding-bottom: 80px;
@@ -29,6 +32,10 @@
   width: 100%;
   margin-bottom: 70px;
   text-align: center;
+  @media (max-width: 767px) {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .places__title {
@@ -47,22 +54,23 @@
 }
 
 .places__slide {
-  // height: 400px;
   flex-grow: 1;
   flex-shrink: 2;
   overflow: hidden;
-  transition: 1s ease;
+  // transition: 1s ease;
   &:hover {
-    flex-grow: 1;
-    flex-shrink: 1.8;
-    img {
-      filter: grayscale(0);
-    }
-    .places__text {
-      opacity: 1;
+    @media (min-width: 1441px) {
+      flex-grow: 1;
+      flex-shrink: 1.8;
+      img {
+        filter: grayscale(0);
+      }
+      .places__text {
+        opacity: 1;
+      }
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     flex-shrink: 0;
     flex-grow: 1;
     height: auto;
@@ -79,12 +87,12 @@
     height: 100%;
     object-fit: cover;
     filter: grayscale(1);
-    @media (max-width: 767px) {
+    @media (max-width: 1440px) {
       margin-bottom: 24px;
       filter: grayscale(0);
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     height: auto;
   }
 }
@@ -93,7 +101,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -104,7 +112,7 @@
   font-size: 20px;
   font-weight: 500;
   display: block;
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     font-size: 16px;
     text-align: left;
     display: none;
@@ -112,7 +120,7 @@
   }
   &--mobile {
     display: block;
-    @media (min-width: 768px) {
+    @media (min-width: 1440px) {
       display: none;
     }
   }
@@ -127,7 +135,7 @@
   width: 100%;
   bottom: 0;
   opacity: 0;
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     font-size: 14px;
     text-align: left;
     position: static;
@@ -140,13 +148,13 @@
 .places__slider {
   .swiper {
     overflow: visible;
-    @media (max-width: 767px) {
+    @media (max-width: 1440px) {
       overflow: hidden;
     }
   }
   .swiper-slide {
     overflow: visible;
-    @media (max-width: 767px) {
+    @media (max-width: 1440px) {
       overflow: hidden;
     }
   }
@@ -162,11 +170,18 @@
       height: 10px;
       margin: 0 2px;
       background-color: #e8e8e8;
+      opacity: 1;
       &-active {
         background-color: var(--color-black);
       }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1441px) {
+      display: none;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    @media(min-width: 1441px) {
       display: none;
     }
   }

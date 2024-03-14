@@ -1,0 +1,176 @@
+.blog {
+    padding-top: 42px;
+    padding-bottom: 170px;
+    @media (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 100px;
+    }
+}
+
+.blog__filter {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    min-width: 100%;
+    overflow-x: auto;
+    @media (max-width: 767px) {
+        gap: 8px;
+    }
+}
+
+.blog-filter__wrap {
+    overflow: hidden;
+    position: relative;
+    margin-right: -24px;
+    width: 100%;
+}
+
+.blog__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__head {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 52px;
+    // overflow: hidden;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 50px;
+        align-items: flex-start;
+    }
+}
+
+.blog__filter-btn {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #f8f8f8;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    &.active {
+        background-color: var(--color-black);
+        color: #fff;
+        img {
+            &:first-child {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+            &:nth-child(2) {
+                opacity: 1;
+                visibility: visible;
+                position: static;
+            }
+        }
+    }
+    img {
+        &:nth-child(1) {
+            opacity: 1;
+            visibility: visible;
+            position: static;
+        }
+        &:nth-child(2) {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    // input {
+    //     position: absolute;
+    //     z-index: -1;
+    //     visibility: hidden;
+    //     opacity: 0;
+    //     &:checked + label {
+    //         background-color: var(--color-black);
+    //         color: #fff;
+    //     }
+    //     &:checked + label svg {
+    //         --color-black-bf: #fff;
+    //     }
+    // }
+    // label {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 10px;
+    //     height: 60px;
+    //     padding: 0 20px;
+    //     background-color: #f8f8f8;
+    //     font-size: 20px;
+    //     font-weight: 400;
+    //     padding-left: 54px;
+    //     background-repeat: no-repeat;
+    //     background-position: left 20px center;
+    //     cursor: pointer;
+    //     @media (max-width: 767px) {
+    //         height: 44px;
+    //         font-size: 16px;
+    //         padding: 0 14px;
+    //         padding-left: 44px;
+    //         background-position: left 14px center;
+    //     }
+    // }
+    @media (max-width: 767px) {
+        min-height: 44px;
+        font-size: 16px;
+        gap: 6px;
+        flex: 1 0 auto;
+    }
+    // &:first-child {
+    //     label {
+    //         background-image: url("../images/info-hexagon.svg");
+    //     }
+    //     input:checked + label {
+    //         background-image: url("../images/info-hexagon-w.svg");
+    //     }
+    // }
+    // &:nth-child(2) {
+    //     label {
+    //         background-image: url("../images/star-01.svg");
+    //     }
+    //     input:checked + label {
+    //         background-image: url("../images/star-01-w.svg");
+    //     }
+    // }
+    // &:nth-child(3) {
+    //     label {
+    //         background-image: url("../images/bell-03.svg");
+    //     }
+    //     input:checked + label {
+    //         background-image: url("../images/bell-03-w.svg");
+    //     }
+    // }
+    // &:nth-child(4) {
+    //     label {
+    //         background-image: url("../images/flag-05.svg");
+    //     }
+    //     input:checked + label {
+    //         background-image: url("../images/flag-05-w.svg");
+    //     }
+    // }
+}
+
+.blog__content {
+    margin-bottom: 74px;
+    @media (max-width: 767px) {
+        margin-bottom: 47px;
+    }
+    .btn-heart {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.blog__title {
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}

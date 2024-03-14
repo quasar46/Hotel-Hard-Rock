@@ -1,0 +1,23 @@
+header.header.header--light
+	.header__body
+		.header__wrap 	
+			a.header__logo(href="index.html") 
+				img(src=require("../../images/logo-dark.svg"), alt="")
+			include header__main
+			.header__burger
+				img(src=require("../../images/burger-dark.svg"), alt="")
+		.weather 
+			span.weather__current-date.weather__current-date--light Jan. 24
+			.weather__item.weather__item--light
+				img(src=require("../../images/w1.svg"), alt="")
+				span -2
+			.weather__item.weather__item--light
+				img(src=require("../../images/w2.svg") alt="")
+				span Work
+			.weather__item.weather__item--light
+				img(src=require("../../images/w3.svg") alt="")
+				span 5.2 m/s
+			.weather__item.weather__item--light
+				img(src=require("../../images/w4.svg") alt="")
+				span Snow level (cm): 70
+

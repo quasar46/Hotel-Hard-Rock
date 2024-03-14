@@ -1,0 +1,122 @@
+.filter-price {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 161px);
+  gap: 4px;
+}
+
+.filter-price__item {
+  position: relative;
+  background-color: #fff;
+  padding: 16px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  input {
+    width: 100%;
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  @media (max-width: 767px) {
+    padding: 0 14px;
+    height: 44px;
+  }
+}
+
+.filter-price__reset {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    color: var(--color-blue);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.filter-floor {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 4px;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(3, 44px);
+  }
+}
+
+.filter-floor__item {
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  label {
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      height: 44px;
+      font-size: 16px;
+    }
+  }
+  input:checked + label {
+    background-color: var(--color-yellow);
+  }
+}
+
+.filter-stage {
+  display: flex;
+  gap: 4px;
+  @media (max-width: 767px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+.filter-stage__item {
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  label {
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 16px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      height: 44px;
+      font-size: 16px;
+      padding: 0 8px;
+    }
+  }
+  input:checked + label {
+    background-color: var(--color-yellow);
+  }
+}

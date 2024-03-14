@@ -1,70 +1,39 @@
-section.map
-	.map__container
-		.map__view
-			.map__control 
-				span  Cultural attractions
-				input(type="checkbox" id="check1")
-				label(for="check1")
-			.map__nav 
-				button.map__nav-incr
-					img(src=require("../../images/plus.svg"), alt="")
-				button.map__nav-decr
-					img(src=require("../../images/minus.svg"), alt="")
-			span.map__title Davos
-			.map__logo 
-				img(src=require("../../images/m-logo.svg"), alt="")
-			.map__item.map__item--1
-				img(src=require("../../images/m1.svg"), alt="")
-				span Schatzalp train
-			.map__item.map__item--2
-				img(src=require("../../images/m2.svg"), alt="")
-				span Shopping streets
-			.map__item.map__item--3
-				img(src=require("../../images/m3.svg"), alt="")
-				span Jakobshorn train
-			.map__item.map__item--4
-				img(src=require("../../images/m4.svg"), alt="")
-				span Vaillant Arena
-			.map__item.map__item--5
-				img(src=require("../../images/m5.svg"), alt="")
-				span Cross-country center
-			.map__item.map__item--6
-				img(src=require("../../images/m6.svg"), alt="")
-				span Congress Center
-			.map__item.map__item--7
-				img(src=require("../../images/m7.svg"), alt="")
-				span Golf Club
-			.map__item.map__item--8
-				img(src=require("../../images/m8.svg"), alt="")
-				span Parsenn ski area
-			.map__item.map__item--9
-				img(src=require("../../images/m9.svg"), alt="")
-				span Lake Davos
-	.map__wrap.container 
-		//- .map__wrap-col 
-		//- 	span.map__address Tobelmühlestrasse 2, CH‐7270 Davos Platz
-		//- 	a.map__tel(href="tel:+41788067045") +41 78 806 70 45
-		//- 	a.map__mail(href="mailto:45info@residencesathrhdavos.com") 45info@residencesathrhdavos.com
-		//- 	.social.map__social 
-		//- 		a(href="")
-		//- 			img(src=require("../../images/inst.svg"), alt="")
-		//- 		a(href="")
-		//- 			img(src=require("../../images/fb.svg"), alt="")
-		//- 		a(href="")
-		//- 			img(src=require("../../images/in.svg"), alt="")
-		//- .map__wrap-col
-		//- 	.map__person 
-		//- 		img.map__person-pic(src=require("../../images/av1.png") alt="")
-		//- 		.map__persong-block 
-		//- 			.map__person-post General Manager of Hard Rock Hotel Davos
-		//- 			.map__persong-name Florian K. Walther
-		//- 	.map__person 
-		//- 		img.map__person-pic(src=require("../../images/av2.png") alt="")
-		//- 		.map__persong-block 
-		//- 			.map__person-post Sales Manager
-		//- 			.map__person-tel +41 78 806 70 45
-		//- 			.map__persong-name Marika Zanoletti
-		h2.section-title.map__wrap-title Location
-		.map__wrap-text 
-			p The Residences at the Hard Rock Hotel Davos occupy a central location in Davos Platz, close to the Promenade, the town’s most popular shops, restaurants, bars and night spots, which are all just moments away by foot.
-			p Davos is rich in cultural offering of art galleries, museums and a theatre together with a catching programme of events and music festivals.
+.map__container
+	.map__view
+		span.map__dot
+		picture.map-item 
+			source(srcset=require("../../images/map2.png") media="(min-width: 768px)")
+			source(srcset=require("../../images/map2-mobile.png") media="(min-width: 0)")
+			img(src=require("../../images/map2.png"), alt="")
+		.map__view-descr 
+			img(src=require("../../images/map-descr.png"), alt="")
+		//- span.map__title Davos
+		//- .map__logo
+		//- 	img(src=require("../../images/m-logo.svg"), alt="")
+		//- .map__item.map__item--1
+		//- 	img(src=require("../../images/m1.svg"), alt="")
+		//- 	span Schatzalp train
+		//- .map__item.map__item--2
+		//- 	img(src=require("../../images/m2.svg"), alt="")
+		//- 	span Shopping streets
+		//- .map__item.map__item--3
+		//- 	img(src=require("../../images/m3.svg"), alt="")
+		//- 	span Jakobshorn train
+		//- .map__item.map__item--4
+		//- 	img(src=require("../../images/m4.svg"), alt="")
+		//- 	span Vaillant Arena
+		//- .map__item.map__item--5
+		//- 	img(src=require("../../images/m5.svg"), alt="")
+		//- 	span Cross-country center
+		//- .map__item.map__item--6
+		//- 	img(src=require("../../images/m6.svg"), alt="")
+		//- 	span Congress Center
+		//- .map__item.map__item--7
+		//- 	img(src=require("../../images/m7.svg"), alt="")
+		//- 	span Golf Club
+		//- .map__item.map__item--8
+		//- 	img(src=require("../../images/m8.svg"), alt="")
+		//- 	span Parsenn ski area
+		//- .map__item.map__item--9
+		//- 	img(src=require("../../images/m9.svg"), alt="")
+		//- 	span Lake Davos

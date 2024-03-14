@@ -1,6 +1,6 @@
 .advantages {
   padding: 120px 0;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding: 24px 0;
     margin-bottom: 40px;
   }
@@ -13,7 +13,7 @@
     "g1 g2 g3"
     "g1 g4 g5";
   gap: 60px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -23,7 +23,7 @@
 .advantages__item {
   &:first-child {
     grid-area: g1;
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       min-height: 366px;
     }
   }
@@ -60,12 +60,12 @@
     height: 236px;
     background: linear-gradient(
       180deg,
-      #000 0%,
-      rgba(0, 0, 0, 0.79) 83.25%,
+      rgba(0, 0, 0, 0.79) 0%,
+      rgba(0, 0, 0, 0.62) 83.25%,
       rgba(0, 0, 0, 0) 100%
     );
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding: 20px;
     margin-bottom: 10px;
   }
@@ -76,7 +76,7 @@
   flex-direction: column;
   align-items: flex-start;
   &:not(:first-child) {
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       flex-direction: row;
       gap: 16px;
     }
@@ -91,7 +91,7 @@
   margin-bottom: 8px;
   font-size: 32px;
   font-weight: 500;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 18px;
   }
 }
@@ -100,7 +100,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 16px;
   }
 }
@@ -110,7 +110,7 @@
   font-weight: 500;
   line-height: 1;
   margin-bottom: 16px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 16px;
@@ -121,7 +121,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 16px;
     line-height: 24px;
   }

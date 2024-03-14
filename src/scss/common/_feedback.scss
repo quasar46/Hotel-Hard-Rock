@@ -1,8 +1,8 @@
 .feedback {
   padding-top: 130px;
-  padding-bottom: 126px;
+  margin-bottom: 126px;
   @media (max-width: 767px) {
-    padding-bottom: 200px;
+    margin-bottom: 56px;
     padding-top: 0;
   }
 }
@@ -21,7 +21,7 @@
     width: 100%;
     background-color: var(--color-black);
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding: 24px;
   }
 }
@@ -29,13 +29,14 @@
 .feedback__title {
   font-size: 32px;
   margin-bottom: 40px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 18px;
+    line-height: 24px;
   }
 }
 
 .feedback__container {
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding: 0;
   }
 }
@@ -45,7 +46,7 @@
   grid-template-columns: auto 665px;
   gap: 55px;
   padding-right: 60px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;
     padding-right: 0;
@@ -55,41 +56,47 @@
 
 .feedback__author {
   position: relative;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding: 0 24px;
   }
 }
 
 .feedback__author-pic {
   background-color: #ebeae6;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     margin-right: 22px;
   }
 }
 
 .fedback__label {
-  position: absolute;
-  width: calc(100% - 44px);
-  left: 50%;
-  top: calc(100% - 90px);
-  transform: translateX(-50%);
+  // position: absolute;
+  // width: calc(100% - 44px);
+  // left: 50%;
+  // top: calc(100% - 90px);
+  // transform: translateX(-50%);
+  position: relative;
+  z-index: 10;
+  margin-top: -95px;
+  margin-left: 22px;
+  margin-right: 22px;
   background-color: #f8f8f8;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 13px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     margin-left: 12px;
-    width: calc(100% - 56px);
+    width: 100%;
     padding: 20px;
     gap: 8px;
+    margin-top: -60px;
   }
 }
 
 .feedback__author-name {
   font-size: 24px;
   font-weight: 500;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 16px;
   }
 }
@@ -98,7 +105,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 14px;
   }
 }

@@ -6,6 +6,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 
 module.exports = {
+	cache: false,
 	entry: path.join(__dirname, 'src', 'index.js'),
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -30,17 +31,23 @@ module.exports = {
 			{
 				test: /\.(png|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
+				generator: {
+					filename: path.join('assets/images', '[name].[contenthash][ext]'),
+				},
 			},
 			{
 				test: /\.svg$/,
 				type: 'asset/resource',
 				generator: {
-					filename: path.join('icons', '[name].[contenthash][ext]'),
+					filename: path.join('assets/icons', '[name].[contenthash][ext]'),
 				},
 			},
 			{
 				test: /\.(woff2?|eot|ttf|otf)$/i,
 				type: 'asset/resource',
+				generator: {
+					filename: 'assets/fonts/[name][ext]'
+				}
 			},
 		],
 	},
@@ -52,6 +59,46 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'src', 'pug/about.pug'),
 			filename: 'about.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/blog.pug'),
+			filename: 'blog.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/article.pug'),
+			filename: 'article.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/author.pug'),
+			filename: 'author.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/calculator.pug'),
+			filename: 'calculator.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/residence.pug'),
+			filename: 'residence.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/catalog.pug'),
+			filename: 'catalog.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/contact.pug'),
+			filename: 'contact.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/privacy.pug'),
+			filename: 'privacy.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/error.pug'),
+			filename: 'error.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/success.pug'),
+			filename: 'success.html',
 		}),
 		new FileManagerPlugin({
 			events: {
@@ -74,7 +121,7 @@ module.exports = {
 	],
 	devServer: {
 		watchFiles: path.join(__dirname, 'src'),
-		port: 9000,
+		port: 9001,
 	},
 	optimization: {
 		minimizer: [
@@ -93,4 +140,9 @@ module.exports = {
 			}),
 		],
 	},
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+	}
 };

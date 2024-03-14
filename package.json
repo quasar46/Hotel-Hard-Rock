@@ -41,6 +41,10 @@
   "dependencies": {
     "accordion-js": "^3.3.4",
     "custom-select": "^1.1.15",
+    "fslightbox": "^3.4.1",
+    "intl-tel-input": "^19.2.19",
+    "lightbox2": "^2.11.4",
+    "scroll-lock": "^2.1.5",
     "swiper": "^11.0.6",
     "tabs": "^0.2.0"
   }

@@ -1,0 +1,18 @@
+.overlay.popup-form-wrap.wrap.popup
+	.popup-form 
+		button.popup-form__close.close 
+			svg(width="24" height="24")
+				use(href="#icn-close")
+		.popup-form__head
+			h3.popup-form__title Leave your contacts for a consultation
+			.popup-form__subtitle  Our manager will call in 10 minutes
+		.popup-form__body 
+			form.popup-form__content
+				input(type="text" placeholder="Name" required)
+				input.phone2(type="tel" required)
+				.popup-form__agree  
+					input(type="checkbox" id="agree")
+					label(for="agree") Text instead of calling
+				input.btn.btn--contrast(type="submit" value="Send request")
+			span.popup-form__info Сlicking the «Send request», you agree to the 
+				a(href="") Privacy policy

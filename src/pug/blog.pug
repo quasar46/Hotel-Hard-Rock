@@ -1,0 +1,406 @@
+doctype html
+html(lang="en")
+	include /modules/head
+	body
+		.wrapper
+			include /modules/header-light
+			main
+				section.blog 
+					.container 
+						.breadcrumbs 
+							a(href="index.html")
+								img(src=require("../images/icn-home.svg"), alt="") 
+							a Blog 
+						.blog__wrap 
+							.blog__head
+								h1.section-title.blog__title Blog
+								.blog-filter__wrap
+									.blog__filter
+										a(href="").blog__filter-btn
+											img(src=require("../images/info-hexagon.svg"), alt="")
+											img(src=require("../images/info-hexagon-w.svg"), alt="")
+											span Davos info
+										a(href="").blog__filter-btn
+											img(src=require("../images/star-01.svg"), alt="")
+											img(src=require("../images/star-01-w.svg"), alt="")
+											span Reviews
+										a(href="").blog__filter-btn
+											img(src=require("../images/bell-03.svg"), alt="")
+											img(src=require("../images/bell-03-w.svg"), alt="")
+											span News
+										a(href="").blog__filter-btn
+											img(src=require("../images/flag-05.svg"), alt="")
+											img(src=require("../images/flag-05-w.svg"), alt="")
+											span Events
+
+
+										//- a(href="").blog__filter-btn
+										//- 	input(type="checkbox" id="f1")
+										//- 	label(for="f1") 
+										//- 		| Davos info
+										//- a(href="").blog__filter-btn
+										//- 	input(type="checkbox" id="f2")
+										//- 	label(for="f2") 
+										//- 		| Reviews
+										//- a(href="").blog__filter-btn
+										//- 	input(type="checkbox" id="f3")
+										//- 	label(for="f3") 
+										//- 		| News
+										//- a(href="").blog__filter-btn
+										//- 	input(type="checkbox" id="f4")
+										//- 	label(for="f4") 
+										//- 		| Events
+							.blog__content.grid 
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0")
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="")  
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+								.grid-item.preview-block
+									.grid-item__pic 
+										.btn-actions
+											button.btn-heart(data-count="0") 
+												svg(width="32" height="32")
+													use(href="#icn-heart")
+											button.btn-share.shareShow 
+												svg(width="32" height="32")
+													use(href="#icn-share")
+
+											.share 
+												span Share 
+												button.share__close 
+													svg(width="24" height="24") 
+														use(href="#icn-close")
+												.share__btns 
+													button.copy.btn.btn--first Copy link
+													a.fb-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-fb")
+													a.x-share(href="")
+														svg(width="32" height="32")
+															use(href="#icn-x")
+													a.in-share(href="") 
+														svg(width="32" height="32")
+															use(href="#icn-in") 
+										.grid-item__label
+											a(href="") News
+											a(href="") Tourism
+										img(src=require("../images/pic17.png") alt="")
+									.grid-item__body 
+										a.preview-link(href="article.html").grid-item__name Top 3 best snowboarding slopes at your nearest resort
+										span.grid-item__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower
+							
+							.pagination 
+								a(href="") 
+									img(src=require("../images/prev.svg"), alt="") 
+								a.active(href="") 1
+								a(href="") 2
+								a(href="") 3
+								a(href="") 4
+								a(href="") ...
+								a(href="") 12
+								a(href="")
+									img(src=require("../images/next.svg"), alt="") 
+							.pagination.pagination--mobile 
+								a(href="") 
+									img(src=require("../images/prev.svg"), alt="") 
+								a.active(href="") 1
+								a(href="") 2
+								a(href="") ...
+								a(href="") 12
+								a(href="")
+									img(src=require("../images/next.svg"), alt="")  
+
+			include /modules/footer

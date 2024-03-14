@@ -2,11 +2,21 @@
   display: flex;
   align-items: flex-start;
   gap: 32px;
-  color: #fff;
   font-size: 20px;
+  @media (max-width: 1500px) {
+    font-size: 18px;
+  }
 }
 
 .main-menu__footer {
+  gap: 10px 32px;
+  a {
+    align-self: start;
+  }
+  @media (max-width: 1500px) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
   @media (max-width: 767px) {
     flex-direction: column;
   }

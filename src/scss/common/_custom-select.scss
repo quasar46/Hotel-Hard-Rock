@@ -1,3 +1,6 @@
+.custom-select-option {
+  // color: #fff;
+}
 .custom-select-option.is-selected::before {
   display: none;
 }
@@ -31,6 +34,8 @@
 .custom-select-panel {
   transition: none;
   top: calc(100% + 20px);
+  background-color: #fff;
+  z-index: 10;
 }
 
 .footer {
@@ -38,6 +43,12 @@
     @media (max-width: 767px) {
       width: auto;
     }
+  }
+}
+
+.header--light .custom-select-opener, .header--light-2 .custom-select-opener {
+  span::after {
+    background-image: url("../images/arrow-down-black.svg");
   }
 }
 
@@ -63,6 +74,9 @@
       background-position: center;
     }
   }
+  @media (max-width: 1500px) {
+    font-size: 18px;
+  }
   @media (max-width: 767px) {
     font-size: 16px;
   }
@@ -76,9 +90,13 @@
 
 .custom-select-option {
   font-size: 20px;
+  color: #000;
   cursor: pointer;
   &.has-focus {
     background-color: var(--color-yellow-02);
+  }
+  @media (max-width: 1500px) {
+    font-size: 18px;
   }
 }
 

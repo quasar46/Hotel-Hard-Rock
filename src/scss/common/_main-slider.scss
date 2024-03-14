@@ -2,6 +2,7 @@
   padding-top: 158px;
   padding-bottom: 58px;
   background-color: #fff;
+  overflow: hidden;
   .swiper-slide {
     @media (max-width: 767px) {
       width: 308px;
@@ -41,16 +42,16 @@
     z-index: 10;
 
     .swiper-button-prev {
-      margin-left: -100px;
-      @media (max-width: 767px) {
-        margin-left: 0;
-      }
+      margin-left: 0;
+      // @media (max-width: 767px) {
+      //   margin-left: 0;
+      // }
     }
     .swiper-button-next {
-      margin-right: -100px;
-      @media (max-width: 767px) {
-        margin-right: 0;
-      }
+      margin-right: 0;
+      // @media (max-width: 767px) {
+      //   margin-right: 0;
+      // }
     }
     @media (max-width: 767px) {
       top: 35%;
@@ -63,10 +64,12 @@
       border-radius: 50%;
       height: 6px;
       background-color: #fff;
+      opacity: 1;
 
       @media (max-width: 767px) {
         width: 4px;
         height: 4px;
+        background-color: #E8E8E8;
       }
       &-active {
         width: 20px;
@@ -83,9 +86,11 @@
 }
 
 .main-slider__head {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 60px;
+  justify-content: space-between;
   @media (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -93,19 +98,41 @@
     margin-bottom: 20px;
     padding-top: 24px;
   }
+  > * {
+    width: calc(100% / 3);
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
+}
+
+.main-slider__head-more {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-slider__sort {
   display: flex;
+  justify-content: center;
   gap: 20px;
   margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   .btn {
     text-transform: none;
+    &.active {
+      background-color: var(--color-black);
+      color: #fff;
+    }
   }
   @media (max-width: 767px) {
     width: 100%;
     order: 1;
     gap: 12px;
+    position: static;
+    transform: translate(0);
+    justify-content: flex-start;
   }
 }
 
@@ -183,6 +210,7 @@
     padding: 0;
     background-color: transparent;
     padding-right: 20px;
+    background-color: #fff;
     &::after {
       content: "";
       position: absolute;
@@ -196,11 +224,5 @@
       top: 50%;
       transform: translateY(-50%);
     }
-  }
-}
-
-.main-slider__btn {
-  @media (max-width: 767px) {
-    background-color: #fff;
   }
 }

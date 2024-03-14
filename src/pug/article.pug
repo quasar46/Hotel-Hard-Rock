@@ -1,0 +1,108 @@
+extends layout
+block main 
+	main
+		//- section.main-block
+		//- 	.article-main
+		//- 		.container 
+		//- 			.article-main__content 
+		//- 				.breadcrumbs 
+		//- 					a(href="index.html")
+		//- 						img(src=require("../images/icn-home.svg"), alt="") 
+		//- 					a(href="") Blog 
+		//- 					a Guests enjoy 75... 
+		//- 				h1.article-main__title Guests enjoy 75 km of crosscountry ski tracks
+		//- 				.article-main__footer 
+		//- 					span Editorial Hard Rock
+		//- 					span 12.12.2023
+		include modules/banner-article
+		section.article.after-main
+			.container 
+				.article__wrap
+					.article__content
+						.article__content-btns 
+							button.btn-heart(data-count="0") 
+								svg(width="32" height="32")
+									use(href="#icn-heart")
+							button.btn-share.shareShow
+								svg(width="32" height="32")
+									use(href="#icn-share")
+							.share 
+								span Share 
+								button.share__close 
+									svg(width="24" height="24") 
+										use(href="#icn-close")
+								.share__btns 
+									button.copy.btn.btn--first Copy link
+									a
+										svg(width="32" height="32")
+											use(href="#icn-fb")
+									a
+										svg(width="32" height="32")
+											use(href="#icn-x")
+									a 
+										svg(width="32" height="32")
+											use(href="#icn-in") 
+						p Winter is not only a time of holidays and fun, but also a great opportunity to relax in the fresh air, get energized and get a lot of positive emotions. We are glad to offer you an unforgettable weekend on the slopes of alpine skiing, where everyone will find something to do.
+						h2.article__title On the territory of our residence there is a professional skiing complex with slopes of varying degrees of difficulty. We offer:
+						.article__pic
+							img(src=require("../images/pic18.png"), alt="")
+						p Equipment rental: we have all the equipment you need for alpine skiing, including skis, boots, poles and helmets.
+						p Beginner training: experienced instructors will help you learn to ski from scratch and teach you to ski with confidence on the slopes.
+						p Family slopes: especially for children and beginner skiers, we offer comfortable and low-risk slopes.
+						p Slopes for professionals: extreme skiing enthusiasts will be able to test their skills on the challenging slopes of our ski resort.
+						p A cozy café on the top of the mountain: here you can enjoy aromatic coffee and appetizing snacks after an active vacation on the ski slopes.
+						ul 
+							li Equipment rental: we have all the equipment you need for alpine skiing, including skis, boots, poles and helmets.
+							li Beginner training: experienced instructors will help you learn to ski from scratch and teach you to ski with confidence on the slopes.
+							li Family slopes: especially for children and beginner skiers, we offer comfortable and low-risk slopes.
+
+					.residence-article 
+						h2.article__title Residence
+						.residence-article__wrap 
+							.residence-article__block 
+								.residence-article__pic
+									img(src=require("../images/r1.png") alt="")
+								.residence-article__col 
+									span.residence-article__name Residence Nº002
+									.residence-article__content
+										.residence-article__char 
+											span 1-Bedroom
+											span 76,09 М²
+										.residence-article__price 
+											span 1 207 548
+											span  CHF
+								a.btn.btn--first(href="") More
+							.residence-article__block 
+								.residence-article__pic
+									img(src=require("../images/r1.png") alt="")
+								.residence-article__col 
+									span.residence-article__name Residence Nº002
+									.residence-article__content
+										.residence-article__char 
+											span 1-Bedroom
+											span 76,09 М²
+										.residence-article__price 
+											span 1 207 548
+											span  CHF
+								a.btn.btn--first(href="") More
+							.residence-article__block 
+								.residence-article__pic
+									img(src=require("../images/r1.png") alt="")
+								.residence-article__col 
+									span.residence-article__name Residence Nº002
+									.residence-article__content
+										.residence-article__char 
+											span 1-Bedroom
+											span 76,09 М²
+										.residence-article__price 
+											span 1 207 548
+											span  CHF
+								a.btn.btn--first(href="") More
+							a(href="residence.html").btn.btn--black More Residence
+						.residence-article__sale 
+							img(src=require("../images/pic19.png") alt="")
+							.residence-article__sale-content
+								span New Year's sale <br> for real estate
+								a.btn.btn--black(href="") More 
+
+		include modules/news-article

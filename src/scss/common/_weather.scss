@@ -19,9 +19,15 @@
   padding: 0 12px;
   min-height: 48px;
   color: #fff;
+  // font-size: 20px;
+  font-size: 18px;
+  @media (max-width: 1500px) {
+    font-size: 18px;
+  }
   @media (max-width: 767px) {
     min-height: 36px;
     padding: 0 10px;
+    font-size: 16px;
     &:nth-child(4) {
       order: 1;
     }
@@ -32,14 +38,26 @@
       width: 24px;
     }
   }
+  &--light {
+    background: var(--Secondary-4, #f8f8f8);
+    backdrop-filter: blur(4px);
+    color: var(--color-base);
+  }
 }
 
 .weather__current-date {
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
   margin-right: 14px;
-  @media(max-width: 767px) {
+  @media (max-width: 1500px) {
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
     font-size: 16px;
+  }
+  &--light {
+    color: var(--color-base);
   }
 }

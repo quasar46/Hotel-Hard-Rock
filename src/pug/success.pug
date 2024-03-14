@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+	include /modules/head
+	body
+
+		.wrapper
+			include /modules/header-light
+			main
+				section.success 
+					.container 
+						.success__block 
+							img(src=require("../images/access.svg"), alt="") 
+							.success__head
+								h1.success__title Application <br> successfully sent
+								span.success__subtitle Our manager will contact you later
+							a.btn.btn--first(href="index.html") Go main page
+
+				include modules/news-article
+			include modules/footer

@@ -10,32 +10,80 @@
 
 .map__view {
   position: relative;
-  max-width: 1920px;
   width: 100%;
-  height: 650px;
-  background-color: #ccc;
-  background-image: url("../images/map.png");
-  background-size: cover;
-  background-position: left center;
+  background-color: #f1efe8;
+  overflow: auto;
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 767px) {
+    // height: 358px;
+    // width: 1148px;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+  }
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.map__view::-webkit-scrollbar {
+  display: none;
+}
+ 
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.map__view {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.map__view-descr {
+  position: relative;
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    background: #f1efe8;
+    height: 124px;
+    padding-left: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      height: 100%;
+      background-color: #f1efe8;
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+
+.map-item {
+  min-width: 1920px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 767px) {
+    min-width: 1148px;
     height: 358px;
     width: 1148px;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
 .map__item {
   position: absolute;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 4px;
-  width: 60px;
-  height: 60px;
   font-size: 14px;
   font-weight: 500;
+  img {
+    width: 60px;
+    height: 60px;
+  }
   &--1 {
     left: 273px;
     top: 116px;
@@ -53,8 +101,8 @@
     left: 728px;
   }
   &--5 {
-    top: 483px;
-    left: 977px;
+    top: 208px;
+    left: 855px;
   }
   &--6 {
     top: 242px;
@@ -76,7 +124,11 @@
 
 .map__container {
   width: 100%;
-  overflow-x: auto;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 .map__logo {
@@ -108,7 +160,13 @@
     transform: translateX(-50%);
     padding: 20px;
     box-shadow: none;
-    gap: 12px;
+    gap: 32px;
+    top: calc(100% - 40px);
+  }
+  &--second {
+    @media (max-width: 767px) {
+      gap: 12px;
+    }
   }
 }
 
@@ -142,6 +200,7 @@
   margin-bottom: 32px;
   @media (max-width: 767px) {
     font-size: 16px;
+    margin-bottom: 12px;
   }
 }
 
@@ -175,7 +234,7 @@
 
 .map__person-tel {
   font-size: 20px;
-  font-weight: 50;
+  font-weight: 500;
   color: #5158ed;
   @media (max-width: 767px) {
     font-size: 16px;
@@ -196,7 +255,8 @@
   min-height: 46px;
   background-color: #fff;
   padding: 0 14px;
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   gap: 14px;
   top: 30px;
@@ -270,13 +330,34 @@
   }
 }
 
-.map__wrap-text  {
+.map__wrap-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
   line-height: 28px;
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     font-size: 16px;
+  }
+}
+
+.map__dot {
+  display: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: 1s ease 1s infinite alternate slidein;
+  &.hidden {
+    display: none;
+  }
+  @media(max-width: 1148px) {
+    display: block;
   }
 }
