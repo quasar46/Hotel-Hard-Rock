@@ -10,8 +10,8 @@ module.exports = {
 	entry: path.join(__dirname, 'src', 'index.js'),
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: 'index.[contenthash].js',
-		assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+		filename: 'index.js',
+		assetModuleFilename: path.join('images', '[name][ext]'),
 	},
 	module: {
 		rules: [
@@ -32,14 +32,14 @@ module.exports = {
 				test: /\.(png|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
 				generator: {
-					filename: path.join('assets/images', '[name].[contenthash][ext]'),
+					filename: path.join('assets/images', '[name][ext]'),
 				},
 			},
 			{
 				test: /\.svg$/,
 				type: 'asset/resource',
 				generator: {
-					filename: path.join('assets/icons', '[name].[contenthash][ext]'),
+					filename: path.join('assets/icons', '[name][ext]'),
 				},
 			},
 			{
@@ -57,48 +57,28 @@ module.exports = {
 			filename: 'index.html',
 		}),
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/about.pug'),
-			filename: 'about.html',
-		}),
-		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/blog.pug'),
-			filename: 'blog.html',
-		}),
-		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/article.pug'),
-			filename: 'article.html',
-		}),
-		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/author.pug'),
-			filename: 'author.html',
-		}),
-		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/calculator.pug'),
-			filename: 'calculator.html',
-		}),
-		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/residence.pug'),
-			filename: 'residence.html',
-		}),
-		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'src', 'pug/catalog.pug'),
 			filename: 'catalog.html',
 		}),
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/contact.pug'),
-			filename: 'contact.html',
+			template: path.join(__dirname, 'src', 'pug/news.pug'),
+			filename: 'news.html',
 		}),
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/privacy.pug'),
-			filename: 'privacy.html',
+			template: path.join(__dirname, 'src', 'pug/new.pug'),
+			filename: 'new.html',
 		}),
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/error.pug'),
-			filename: 'error.html',
+			template: path.join(__dirname, 'src', 'pug/about.pug'),
+			filename: 'about.html',
 		}),
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'pug/success.pug'),
-			filename: 'success.html',
+			template: path.join(__dirname, 'src', 'pug/franshiza.pug'),
+			filename: 'franshiza.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src', 'pug/contacts.pug'),
+			filename: 'contacts.html',
 		}),
 		new FileManagerPlugin({
 			events: {
@@ -116,12 +96,12 @@ module.exports = {
 			}
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].[contenthash].css',
+			filename: '[name].css',
 		}),
 	],
 	devServer: {
 		watchFiles: path.join(__dirname, 'src'),
-		port: 9001,
+		port: 9009,
 	},
 	optimization: {
 		minimizer: [

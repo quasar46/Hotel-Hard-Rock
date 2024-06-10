@@ -1,154 +1,71 @@
 extends layout
 block main 
 	main
-		section.main-block
-			//- video#video.main-block__video(muted loop)
-			//- 	source(src=require("../images/video.mp4") type="video/mp4")
-			//- button#playVideo
-			//- 	span Video about <br> apartments
-			.swiper.banner-slider
-				.swiper-wrapper
-					.swiper-slide 
-						img(src=require("../images/back1.png"), alt="")
-					.swiper-slide 
-						img(src=require("../images/back2.png"), alt="")
-					.swiper-slide 
-						img(src=require("../images/back1.png"), alt="")
-					.swiper-slide 
-						img(src=require("../images/back2.png"), alt="")
-					.swiper-slide 
-						img(src=require("../images/back1.png"), alt="")
-			.container
-				.main-block__wrap
-					include modules/reviews
-					+reviews(class="reviews--about")
-
-		section.places.after-main 
+		.breadcrumbs.container 
+			a(href="/") Главная
+			span О компании
+		section.about 
 			.container 
-				.places__head
-					h2.section-title.places__title With the benefits of hotel living
-					span.places__subtitle Owners have complimentary access to the wellness facilities within the Hard Rock Hotel Davos and its state-of-the-art Rock Spa®, Body Rock® gym and Rock Om® yoga and a lot more.
-			.places__wrap.container 
-				.places__slider 
-					.swiper 
-						.swiper-wrapper.places__items 
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile 10% off in our restaurants & bars
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name 10% off in our restaurants & bars
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile 5% off at the rock shop
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name 5% off at the rock shop
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile Free buffet breakfast
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name Free buffet breakfast
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile Free gym  & spa access
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name Free gym  & spa access
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile 10% off for spa treatments
-									span.places__text  
-								span.places__name 10% off for spa treatments
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile 10% off for hotel booking
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name 10% off for hotel booking
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile Free 24/7 concierge services
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name Free 24/7 concierge services
-							.swiper-slide.places__slide 
-								.places__pic 
-									img(src=require("../images/pic9.png"), alt="")
-									span.places__name.places__name--mobile Free garage parking spacing
-									span.places__text Unwind at Rock Spa®, an 800-square-meter oasis featuring two saunas, a steam room, swimming pool, whirlpool, ice fountain and experience shower. Owners have full access to all the award-winning wellness facilities within the Hard Rock Hotel Davos.
-								span.places__name Free garage parking spacing
-					.swiper-pagination
-					.swiper-button-prev
-					.swiper-button-next
-		section.advantages 
-			.container 
-				.advantages__wrap 
-					.advantages__item.advantages__large
-						span.advantages__large-title Why choose davos
-						span.advantages__large-text Located in the breathtaking Swiss Alps with amazing views and a range of activities available throughout the year, buyers can enjoy the Alpine lifestyle for 8 weeks per year, including 3 weeks during high season.
-					.advantages__item 
-						img.advantages__item-pic(src=require("../images/a1.svg") alt="")
-						.advantages__item__box
-							span.advantages__item-title Impressive ROI
-							span.advantages__item-text The Residences provide an impressive annual return on investment, ensuring your chosen investment continues to earn a profit.
-					.advantages__item 
-						img.advantages__item-pic(src=require("../images/a2.svg") alt="")
-						.advantages__item__box
-							span.advantages__item-title  Negotiation support
-							span.advantages__item-text The Residences provide an impressive annual return on investment, ensuring your chosen investment continues to earn a profit.
-					.advantages__item 
-						img.advantages__item-pic(src=require("../images/a3.svg") alt="")
-						.advantages__item__box
-							span.advantages__item-title  Stay for full holidays or just for a weekend
-							span.advantages__item-text The Residences at the Hard Rock Hotel Davos is a perfect holiday home, you can live there for up to 8 weeks per year, including 3 weeks in a high season.
-					.advantages__item 
-						img.advantages__item-pic(src=require("../images/a4.svg") alt="")
-						.advantages__item__box
-							span.advantages__item-title  Property management service
-							span.advantages__item-text The Residences at the Hard Rock Hotel Davos is a perfect holiday home, you can live there for up to 8 weeks per year, including 3 weeks in a high season.
-
-		section.about
-			.container 
-				.about__head
-					h2.section-title.about__title About apartmens
-					span.about__subtitle These exclusive apartments represent a fantastic investment and lifestyle purchase, surrounded by a charming and dramatic Alpine backdrop.
 				.about__wrap 
-					.about__slider
-						.swiper 
-							.swiper-wrapper
-								.swiper-slide.about__slide 
-									img(src=require("../images/pic11.png"), alt="")
-									.about__slide-footer
-										span.about__slide-title Design
-										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
-								.swiper-slide.about__slide 
-									img(src=require("../images/pic12.png"), alt="")
-									.about__slide-footer
-										span.about__slide-title Views
-										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
-								.swiper-slide.about__slide 
-									img(src=require("../images/pic13.png"), alt="")
-									.about__slide-footer
-										span.about__slide-title Relax
-										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
-								.swiper-slide.about__slide 
-									img(src=require("../images/pic11.png"), alt="")
-									.about__slide-footer
-										span.about__slide-title Relax
-										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
-								.swiper-slide.about__slide 
-									img(src=require("../images/pic11.png"), alt="")
-									.about__slide-footer
-										span.about__slide-title Furniture and facilities
-										span.about__slide-text Designed by the internationally acclaimed architects, Woods Bagot, to reflect the latest trends in Swiss style
-						.swiper-button-prev 
-						.swiper-button-next
-		include modules/map-second
+					.about__head
+						h2.about__title.title-center О компании
+						.about__subtitle С 2018 года мы <span>предоставляем в аренду легковые автомашины</span> для пассажирских перевозок легковым такси.
+						.about-grid
+							.about-grid__item.gr1
+								span.about-grid__name 1300+ авто
+								span.about-grid__text Развивающаяся сеть представительств в городах Москва, Екатеринбург, Ярославль, Кострома, Челябинск.
+							.about-grid__item.gr2
+								span.about-grid__name 7+ млн. поездок
+								span.about-grid__text Ежегодно нашим автотранспортом выполняется.
+							.about-grid__item.gr3 
+								span.about-grid__name Наши ценности
+								span.about-grid__text Командный дух и клиентоориентированность.
+							.about-grid__item.gr4
+								span.about-grid__name Рост
+								span.about-grid__text Постоянно совершенствуем обслуживание водителей, внедряем современные инструменты и технологии, что значительно сокращает время обработки обращений.
 
-		include modules/residence
-		
-		include modules/team
-		include modules/feedback
+		section.help-block
+			.container
+				.help-block__wrap 
+					.help-block__col-l
+						h2.help-block__title <span>Помогаем</span> разным людям получить равные возможности
+					.help-block__col-r
+						span Мы трудимся, что сделать работу в такси максимально комфортной. Занимайтесь любимым делом, а об остальном мы позаботимся.
+
+						
+		section.principles 
+			.container 
+				h2.principles__title.title-center
+					span Наши принципы
+				.principles__wrap 
+					.principles__item 
+						span.principles__item-title Клиентоориен-тированность
+						ul.principles__list 
+							li.principles__list-item быстрое оформление;
+							li.principles__list-item собственный колл-центр и круглосуточная поддержка водителей;
+							li.principles__list-item оплата аренды 2 раза в сутки равными платежами;
+							li.principles__list-item моментальный вывод денежных средств;
+							li.principles__list-item проводим розыгрыши среди водителей;
+							li.principles__list-item помощь в оформлении КИС АРТ или решении спорных ситуаций с агрегатором.
+
+					.principles__item
+						span.principles__item-title Уважение и доступность
+						ul.principles__list
+							li.principles__list-item участвуем в социальных проектах;
+							li.principles__list-item обслуживаем водителей независимо от пола и возраста;
+							li.principles__list-item глухонемые и слабослышащие водители;
+							li.principles__list-item аренда посменно или по графикам 6/1 или 7/0.
+					.principles__item
+						span.principles__item-title Честность
+						ul.principles__list
+							li.principles__list-item без залогов и скрытых платежей;
+							li.principles__list-item условия обговариваем и прописываем в договоре;
+							li.principles__list-item проводим осмотр при выдаче и возвращении арендованной автомашины, фиксируем все замечания и сохраняем в базе
+							li.principles__list-item используя приложение для водителя, Вы получаете полную информацию о каждом полученном или потраченном рубле.
+					.principles__item
+						span.principles__item-title Безопасность
+						ul.principles__list
+							li.principles__list-item без залогов и скрытых платежей;
+							li.principles__list-item условия обговариваем и прописываем в договоре;
+							li.principles__list-item проводим осмотр при выдаче и возвращении арендованной автомашины, фиксируем все замечания и сохраняем в базе
+							li.principles__list-item используя приложение для водителя, Вы получаете полную информацию о каждом полученном или потраченном рубле.

@@ -1,111 +1,122 @@
-.feedback {
-  padding-top: 130px;
-  margin-bottom: 126px;
-  @media (max-width: 767px) {
-    margin-bottom: 56px;
-    padding-top: 0;
-  }
-}
-
-.feedback__block {
-  position: relative;
-  background-color: var(--color-black);
-  color: #fff;
-  padding: 60px 60px 60px 0;
-  &::before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-black);
-  }
-  @media (max-width: 1023px) {
-    padding: 24px;
-  }
+.feedback__wrap {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-yellow);
+    padding: 80px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &::before,
+    &::after {
+        content: "";
+        background-image: url("../images/feedback-pic.svg");
+        width: 322px;
+        height: 330px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+    &::before {
+        left: -70px;
+    }
+    &::after {
+        right: 0;
+    }
+    & > * {
+        position: relative;
+        z-index: 10;
+    }
+    @media (max-width: 1023px) {
+        padding: 40px 24px;
+        gap: 24px;
+    }
+    @media (max-width: 639px) {
+        padding: 24px 16px;
+        border-radius: 24px;
+    }
 }
 
 .feedback__title {
-  font-size: 32px;
-  margin-bottom: 40px;
-  @media (max-width: 1023px) {
-    font-size: 18px;
-    line-height: 24px;
-  }
+    text-align: center;
+    margin-bottom: 0;
 }
 
-.feedback__container {
-  @media (max-width: 1023px) {
-    padding: 0;
-  }
-}
-
-.feedback__wrap {
-  display: grid;
-  grid-template-columns: auto 665px;
-  gap: 55px;
-  padding-right: 60px;
-  @media (max-width: 1023px) {
+.feedback__head {
     display: flex;
     flex-direction: column;
-    padding-right: 0;
     gap: 24px;
-  }
+    @media (max-width: 639px) {
+        gap: 16px;
+    }
 }
 
-.feedback__author {
-  position: relative;
-  @media (max-width: 1023px) {
-    padding: 0 24px;
-  }
-}
-
-.feedback__author-pic {
-  background-color: #ebeae6;
-  @media (max-width: 1023px) {
-    margin-right: 22px;
-  }
-}
-
-.fedback__label {
-  // position: absolute;
-  // width: calc(100% - 44px);
-  // left: 50%;
-  // top: calc(100% - 90px);
-  // transform: translateX(-50%);
-  position: relative;
-  z-index: 10;
-  margin-top: -95px;
-  margin-left: 22px;
-  margin-right: 22px;
-  background-color: #f8f8f8;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  @media (max-width: 1023px) {
-    margin-left: 12px;
+.feedback__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    max-width: 500px;
     width: 100%;
-    padding: 20px;
-    gap: 8px;
-    margin-top: -60px;
-  }
+    margin: auto;
+    text-align: center;
+	@media(max-width: 639px) {
+		font-size: 16px;
+	}
 }
 
-.feedback__author-name {
-  font-size: 24px;
-  font-weight: 500;
-  @media (max-width: 1023px) {
-    font-size: 16px;
-  }
+.feedback__values {
+    display: flex;
+    gap: 24px;
+    input {
+        width: 100%;
+        height: 54px;
+        border-radius: 16px;
+        background-color: var(--color-white);
+        padding: 24px;
+                    color: #525B6A;
+
+        &::placeholder {
+            color: #525B6A;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
-.feedback__text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  @media (max-width: 1023px) {
-    font-size: 14px;
-  }
+.feedback__content {
+    max-width: 628px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width: 1023px) {
+        gap: 16px;
+    }
+}
+
+.feedback__submit {
+    width: 100%;
+    grid-template-columns: 1fr 54px;
+    .btn__text,
+    .btn__arr {
+        background-color: var(--color-base);
+        color: var(--color-yellow);
+    }
+    .btn__arr {
+        background-image: url("../images/arrow-up-right-yellow.svg");
+    }
+    @media (max-width: 639px) {
+        grid-template-columns: 1fr 40px;
+    }
 }

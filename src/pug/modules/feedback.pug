@@ -1,37 +1,13 @@
-section.feedback 
-	.container.feedback__container 
-		.feedback__wrap 
-			.feedback__block 
-				h2.title-section.feedback__title Please, fill in the form below. This will help us to select for you the best matching offer.
-				form.form(action="") 
-					.form__item 
-						select.mySelect
-							option Type of finance
-							option(value="") Mortgage
-							option(value="") Cash  
-					.form__item 
-						select.mySelect
-							option Type of usage
-							option(value="") Investment only 
-							option(value="") Investment + second home 
-					.form__item 
-						select.mySelect
-							option Availability status
-							option Ready to live now (from 1 200 000 CHF)
-							option(value="") Off plan sale (from 700 000 CHF) 
-					.form__item 
-						input(type="text" required)
-						label(for="") Your name
-					.form__item
-						input(type="email" required)
-						label(for="") Your email
-					.form__item.form__item-lang 
-						input.phone(type="tel")
-					input(type="submit" value="Send").form__submit
-
-			.feedback__author
-				.feedback__author-pic
-					img(src=require("../../images/pic8.png"), alt="")
-				.fedback__label 
-					.feedback__author-name Marika Zanoletti, Sales Director
-					p.feedback__text Hi I'm Marika, and I will be happy to organise this tour for you. We can book a dinner, massage or a one-day ski pass for you. If you travel from abroad, we can also organise a transfer from Zürich Airport to Davos for you. Please, fill in the form, and I will contact you shortly.
+section.feedback#feedback
+	.container 
+		.feedback__wrap
+			.feedback__head
+				h2.feedback__title Оставьте заявку
+				span.feedback__subtitle Наш специалист перезвонит, чтобы рассказать о деталях и ответить на возникшие вопросы.
+			form.feedback__content
+				.feedback__values 
+					input(type="text" placeholder="Имя")
+					input.phone(type="text" name="phone")
+				button(type="submit").btn.btn--arrow.feedback__submit
+					span.btn__text Оставить заявку
+					span.btn__arr
